@@ -1,0 +1,390 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="F--#bHfLq#;XZ@{0`eF}">guessesTaken</variable>
+    <variable type="" id="0HT@OQ(;uf#Rm6re(MU$">i</variable>
+    <variable type="" id="^i`?|i;.iE9^XDL=o[G2">myName</variable>
+    <variable type="" id="M!!^O-^[jYEA?S9n,YAv">j</variable>
+    <variable type="" id="7zu%UAl!h/WEDYb^|bRk">number</variable>
+    <variable type="" id="wgaS-zj%sZ=9CZ:4?Iz6">k</variable>
+    <variable type="" id="h)6l~*4L2Cfe`4,b}Hbq">var</variable>
+    <variable type="" id="bUJN0H:7]r=izF_~v(kV">guess</variable>
+    <variable type="" id="Vy3Zk*O-mEw/l6Q/^KP8">m</variable>
+    <variable type="" id="OJdRIn2VP]x)gh[@5@#U">n</variable>
+    <variable type="" id="N`1cHQBY:+1,~o.Y`-3e">o</variable>
+    <variable type="" id="V]P)3;aSmkRh?RV_vbZN">p</variable>
+  </variables>
+  <block type="random" id="rpsYAN5Q$;sHv#v!%AS)" x="151" y="42">
+    <next>
+      <block type="variables_set" id="lR{:Ek47~JY;Z[-8~%9e">
+        <field name="VAR" id="F--#bHfLq#;XZ@{0`eF}" variabletype="">guessesTaken</field>
+        <field name="NAME">=</field>
+        <value name="varset">
+          <shadow type="textinline" id="EMoqFW--I{@y8h`^qeLh">
+            <field name="text">0</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="webprintnew" id="8?ZcT%jaq`4L2Xaf9NR?">
+            <value name="text">
+              <shadow type="textinline" id="]65@d%lUG_%]~bkX^-]d">
+                <field name="text">Hello! What is your name?</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="variables_set" id="@tbCLqz)l`pY~M,c,}cc">
+                <field name="VAR" id="^i`?|i;.iE9^XDL=o[G2" variabletype="">myName</field>
+                <field name="NAME">=</field>
+                <value name="varset">
+                  <shadow type="textinline" id="m~T3~_HhF4t~O;%NI|Sx">
+                    <field name="text">input()</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="variables_set" id="pA],Q3y%Ak2gC,1;hjNg">
+                    <field name="VAR" id="7zu%UAl!h/WEDYb^|bRk" variabletype="">number</field>
+                    <field name="NAME">=</field>
+                    <value name="varset">
+                      <shadow type="textinline" id="}W*n=8D8tu8d{r{6p.b+">
+                        <field name="text">0</field>
+                      </shadow>
+                      <block type="random_randint" id="~@LMC7q:_45gTMwnKVX#">
+                        <value name="text">
+                          <shadow type="textinline" id="zT8Ja`MkiY6xjDae_K52">
+                            <field name="text">1,20</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="webprintnew" id="9]n:L1x}-=*/?{t]i5Yu">
+                        <value name="text">
+                          <shadow type="textinline" id="]#DUxC~$t.AQ2|V.Tq1Q">
+                            <field name="text">Well" + myName + ", I am thinking of a number between 1 and 20</field>
+                          </shadow>
+                        </value>
+                        <next>
+                          <block type="webwhileout" id="HpM2zfeQ8Y_Om$5Gom,4">
+                            <value name="cond">
+                              <shadow type="textinline" id="0q4;-8^6fv@j9l!XjY/c">
+                                <field name="text">True</field>
+                              </shadow>
+                              <block type="webinternal" id="6hjNitnz}p,b;6]RHM}2">
+                                <field name="choose">&lt;</field>
+                                <value name="first">
+                                  <shadow type="textinline" id="iNJeo5L4RTVK7JvD%xN{">
+                                    <field name="text">0</field>
+                                  </shadow>
+                                  <block type="variables_get" id="~uj;oL0!n$c%jKd8mFhZ">
+                                    <field name="VAR" id="F--#bHfLq#;XZ@{0`eF}" variabletype="">guessesTaken</field>
+                                  </block>
+                                </value>
+                                <value name="last">
+                                  <shadow type="textinline" id="1:0!EAkrf~TmfzEHQx|2">
+                                    <field name="text">6</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO">
+                              <block type="webprintnew" id="O%xz~s7b?}_=dbWfk:FL">
+                                <value name="text">
+                                  <shadow type="textinline" id="^]GFYz{iou{uCiWO[VOL">
+                                    <field name="text">Take a guess</field>
+                                  </shadow>
+                                </value>
+                                <next>
+                                  <block type="variables_set" id="bGK.a#f_]2z_lG?osicL">
+                                    <field name="VAR" id="bUJN0H:7]r=izF_~v(kV" variabletype="">guess</field>
+                                    <field name="NAME">=</field>
+                                    <value name="varset">
+                                      <shadow type="textinline" id="{vd`|*K+Ubz4}L]d:W:!">
+                                        <field name="text">input()</field>
+                                      </shadow>
+                                    </value>
+                                    <next>
+                                      <block type="variables_set" id="E*pS,O.x6#@9JxOv9R@k">
+                                        <field name="VAR" id="bUJN0H:7]r=izF_~v(kV" variabletype="">guess</field>
+                                        <field name="NAME">=</field>
+                                        <value name="varset">
+                                          <shadow type="textinline" id="a:rU=97tXaGqiAX{9[0H">
+                                            <field name="text">0</field>
+                                          </shadow>
+                                          <block type="webint" id="C/fr90si97SoimrB0AyZ">
+                                            <value name="bool">
+                                              <shadow type="textinline" id="?TagR50^dWK78(apq{.?">
+                                                <field name="text">1</field>
+                                              </shadow>
+                                              <block type="variables_get" id="$jy6e@2h7*@~o#Jne5A.">
+                                                <field name="VAR" id="bUJN0H:7]r=izF_~v(kV" variabletype="">guess</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="variables_set" id="|1x1yC9*ok2#,D)ixOFj">
+                                            <field name="VAR" id="F--#bHfLq#;XZ@{0`eF}" variabletype="">guessesTaken</field>
+                                            <field name="NAME">=</field>
+                                            <value name="varset">
+                                              <shadow type="textinline" id=":kbX/[/)%FPP3K$Oz}{_">
+                                                <field name="text">0</field>
+                                              </shadow>
+                                              <block type="operators2" id="JERF@P[Plz-hy(fuuR+J">
+                                                <field name="operators">+</field>
+                                                <value name="first">
+                                                  <shadow type="textinline" id="4E6L:qBAuB[[oL#kT7xx">
+                                                    <field name="text">True</field>
+                                                  </shadow>
+                                                  <block type="variables_get" id="GXVwK]a||.7BXvH)=~G,">
+                                                    <field name="VAR" id="F--#bHfLq#;XZ@{0`eF}" variabletype="">guessesTaken</field>
+                                                  </block>
+                                                </value>
+                                                <value name="last">
+                                                  <shadow type="textinline" id="g|_IA)alu4;C@2WVnl!B">
+                                                    <field name="text">1</field>
+                                                  </shadow>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="webifinline" id="M9F~qiC]n8dhculB*,G~">
+                                                <value name="iftext">
+                                                  <shadow type="textinline" id=":XCS6D=6TL1=@NM$YpwH">
+                                                    <field name="text">True</field>
+                                                  </shadow>
+                                                  <block type="webinternal" id="NH~d/~nihMFEQ_=a,zdN">
+                                                    <field name="choose">&lt;</field>
+                                                    <value name="first">
+                                                      <shadow type="textinline" id="B57F$(Qi?!zh~MN;dMi:">
+                                                        <field name="text">0</field>
+                                                      </shadow>
+                                                      <block type="variables_get" id="d?wp;M|1fn^}oc;$+z3O">
+                                                        <field name="VAR" id="bUJN0H:7]r=izF_~v(kV" variabletype="">guess</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="last">
+                                                      <shadow type="textinline" id="rYA+]JYS?m98jO4dgya{">
+                                                        <field name="text">1</field>
+                                                      </shadow>
+                                                      <block type="variables_get" id="kJNH+[%-bG=Ev*j^{a?q">
+                                                        <field name="VAR" id="7zu%UAl!h/WEDYb^|bRk" variabletype="">number</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <statement name="ifstate">
+                                                  <block type="webprintnew" id="{@zJutN}O8|#;kQV12-O">
+                                                    <value name="text">
+                                                      <shadow type="textinline" id="uu1.8O=;m[#(T7BJLapm">
+                                                        <field name="text">Your guess is too low</field>
+                                                      </shadow>
+                                                    </value>
+                                                  </block>
+                                                </statement>
+                                                <next>
+                                                  <block type="webifinline" id="n9DT3OlVdf:VUqHCkG8+">
+                                                    <value name="iftext">
+                                                      <shadow type="textinline" id=":XCS6D=6TL1=@NM$YpwH">
+                                                        <field name="text">True</field>
+                                                      </shadow>
+                                                      <block type="webinternal" id="xzuYMWziT$KpkMP!lBBa">
+                                                        <field name="choose">&gt;</field>
+                                                        <value name="first">
+                                                          <shadow type="textinline" id="B57F$(Qi?!zh~MN;dMi:">
+                                                            <field name="text">0</field>
+                                                          </shadow>
+                                                          <block type="variables_get" id="k8J)E]0/*~+@8n8az.|@">
+                                                            <field name="VAR" id="bUJN0H:7]r=izF_~v(kV" variabletype="">guess</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="last">
+                                                          <shadow type="textinline" id="rYA+]JYS?m98jO4dgya{">
+                                                            <field name="text">1</field>
+                                                          </shadow>
+                                                          <block type="variables_get" id="r/.i9V*rEe)1u=#V?14U">
+                                                            <field name="VAR" id="7zu%UAl!h/WEDYb^|bRk" variabletype="">number</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <statement name="ifstate">
+                                                      <block type="webprintnew" id="6kgG]ba)9{{PMk=x$;g7">
+                                                        <value name="text">
+                                                          <shadow type="textinline" id="?VgMaoA$vm%]6)MI19.n">
+                                                            <field name="text">Your guess is too high</field>
+                                                          </shadow>
+                                                        </value>
+                                                      </block>
+                                                    </statement>
+                                                    <next>
+                                                      <block type="webifinline" id="lBw3Zx@k8/gfGrv]!QrT">
+                                                        <value name="iftext">
+                                                          <shadow type="textinline" id=":XCS6D=6TL1=@NM$YpwH">
+                                                            <field name="text">True</field>
+                                                          </shadow>
+                                                          <block type="webinternal" id="qOPc/VS`$^-3?fE^Uet:">
+                                                            <field name="choose">==</field>
+                                                            <value name="first">
+                                                              <shadow type="textinline" id="B57F$(Qi?!zh~MN;dMi:">
+                                                                <field name="text">0</field>
+                                                              </shadow>
+                                                              <block type="variables_get" id="S;T2,VA=;)Y5=kBMo;4-">
+                                                                <field name="VAR" id="bUJN0H:7]r=izF_~v(kV" variabletype="">guess</field>
+                                                              </block>
+                                                            </value>
+                                                            <value name="last">
+                                                              <shadow type="textinline" id="rYA+]JYS?m98jO4dgya{">
+                                                                <field name="text">1</field>
+                                                              </shadow>
+                                                              <block type="variables_get" id="IRi~lQFz?E2riCM7,?=K">
+                                                                <field name="VAR" id="7zu%UAl!h/WEDYb^|bRk" variabletype="">number</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <statement name="ifstate">
+                                                          <block type="web_break" id="Jdqz_6G^8_ZbUEo|ka]1"></block>
+                                                        </statement>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </statement>
+                            <next>
+                              <block type="webifinline" id="Mh3o0MpS/{{NixUy#l1$">
+                                <value name="iftext">
+                                  <shadow type="textinline" id=":XCS6D=6TL1=@NM$YpwH">
+                                    <field name="text">True</field>
+                                  </shadow>
+                                  <block type="webinternal" id="hg/xUra592,Hdo?T+]${">
+                                    <field name="choose">==</field>
+                                    <value name="first">
+                                      <shadow type="textinline" id="B57F$(Qi?!zh~MN;dMi:">
+                                        <field name="text">0</field>
+                                      </shadow>
+                                      <block type="variables_get" id="]?{C)9{a-RhpX/7t-z7a">
+                                        <field name="VAR" id="bUJN0H:7]r=izF_~v(kV" variabletype="">guess</field>
+                                      </block>
+                                    </value>
+                                    <value name="last">
+                                      <shadow type="textinline" id="rYA+]JYS?m98jO4dgya{">
+                                        <field name="text">1</field>
+                                      </shadow>
+                                      <block type="variables_get" id="?Bdsf{^n=IaVLy6lrf#x">
+                                        <field name="VAR" id="7zu%UAl!h/WEDYb^|bRk" variabletype="">number</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <statement name="ifstate">
+                                  <block type="variables_set" id="0~4OE(9d-|x~WEZf.O[d">
+                                    <field name="VAR" id="F--#bHfLq#;XZ@{0`eF}" variabletype="">guessesTaken</field>
+                                    <field name="NAME">=</field>
+                                    <value name="varset">
+                                      <shadow type="textinline" id="/eg;k#{Ww!QVXK!N0E9T">
+                                        <field name="text">0</field>
+                                      </shadow>
+                                      <block type="webstr" id="836udtmlV(MSKD*wyK~5">
+                                        <value name="bool">
+                                          <shadow type="textinline" id="/I|{(9g#,*F7(8Yovx@+">
+                                            <field name="text">1</field>
+                                          </shadow>
+                                          <block type="variables_get" id="S+|wakBRN6T7jGUM,+tN">
+                                            <field name="VAR" id="F--#bHfLq#;XZ@{0`eF}" variabletype="">guessesTaken</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="webprintnew" id="yR:[8^rU+A*Gh2ULvm!x">
+                                        <value name="text">
+                                          <shadow type="textinline" id="W91gUuV@;uJ@09|d:PQO">
+                                            <field name="text">Good job, " + myName + "! You guessed my number in " + guessesTaken + " guesses!</field>
+                                          </shadow>
+                                        </value>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </statement>
+                                <next>
+                                  <block type="webifinline" id="BGzO^z/)lZGo3gBE`!I+">
+                                    <value name="iftext">
+                                      <shadow type="textinline" id=":XCS6D=6TL1=@NM$YpwH">
+                                        <field name="text">True</field>
+                                      </shadow>
+                                      <block type="webinternal" id=".5uuMa-I[2HUY;C/3UYh">
+                                        <field name="choose">!=</field>
+                                        <value name="first">
+                                          <shadow type="textinline" id="B57F$(Qi?!zh~MN;dMi:">
+                                            <field name="text">0</field>
+                                          </shadow>
+                                          <block type="variables_get" id=",vNZQ`Ls5egbw9Cz5S:N">
+                                            <field name="VAR" id="bUJN0H:7]r=izF_~v(kV" variabletype="">guess</field>
+                                          </block>
+                                        </value>
+                                        <value name="last">
+                                          <shadow type="textinline" id="rYA+]JYS?m98jO4dgya{">
+                                            <field name="text">1</field>
+                                          </shadow>
+                                          <block type="variables_get" id="@THp[uz6pwmubD9k)8s9">
+                                            <field name="VAR" id="7zu%UAl!h/WEDYb^|bRk" variabletype="">number</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <statement name="ifstate">
+                                      <block type="variables_set" id="NM{FIOD?9BoK9lQ%C@8O">
+                                        <field name="VAR" id="7zu%UAl!h/WEDYb^|bRk" variabletype="">number</field>
+                                        <field name="NAME">=</field>
+                                        <value name="varset">
+                                          <shadow type="textinline" id="/eg;k#{Ww!QVXK!N0E9T">
+                                            <field name="text">0</field>
+                                          </shadow>
+                                          <block type="webstr" id=";O!8P#no|iHeVgpoNNDF">
+                                            <value name="bool">
+                                              <shadow type="textinline" id="/I|{(9g#,*F7(8Yovx@+">
+                                                <field name="text">1</field>
+                                              </shadow>
+                                              <block type="variables_get" id="`B~0ubs8#RRDi)0R7*8*">
+                                                <field name="VAR" id="7zu%UAl!h/WEDYb^|bRk" variabletype="">number</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="webprintnew" id="5=7q*t2?:KN#oh=jV{ef">
+                                            <value name="text">
+                                              <shadow type="textinline" id="Y1#q*2WJ5D7U01ITp1[;">
+                                                <field name="text">Nope. The number I was thinking of was " + number+ " </field>
+                                              </shadow>
+                                            </value>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </statement>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
