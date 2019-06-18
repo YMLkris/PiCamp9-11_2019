@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name = Update Camp Files
+Type = Application
+Comment = Update from camp Github
+Categories = Application
+
+Exec=lxterminal -l -e 'cd /home/pi/Desktop/PiCamp9-11_2019 ; git pull https://github.com/YMLkris/PiCamp9-11_2019 ; sleep 10'
+Terminal=true
+StartupNotify=true
+Icon=/home/pi/Desktop/PiCamp9-11_2019/dclogo.png
