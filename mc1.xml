@@ -1,0 +1,118 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="5kZSM6OL:]vW^91%VlKF">x</variable>
+    <variable type="" id="F34Fa3@y)B{|sQC0zF,R">y</variable>
+    <variable type="" id="26Cc59,?yVZ%8{C`=@v{">z</variable>
+    <variable type="" id="WEz^YDNtP(W];`=Ix:NX">i</variable>
+    <variable type="" id="$Tw1W@|1rNY!.=6,Dtvr">j</variable>
+    <variable type="" id="-=.EIpH,m3yES[}5oHN%">k</variable>
+  </variables>
+  <block type="import_time" id="54-aettB6SdW{Fa.4jZ;" x="59" y="2">
+    <next>
+      <block type="mcimport" id="1nhG+:NboI$]jP5#?K}t">
+        <next>
+          <block type="mccreate" id="M9B@b?Is#$k^)[6Zm4!Q">
+            <next>
+              <block type="variables_set" id="2|wqhBH.$1tE#QCUp6=w">
+                <field name="VAR" id="5kZSM6OL:]vW^91%VlKF" variabletype="">x</field>
+                <field name="NAME">=</field>
+                <value name="varset">
+                  <shadow type="textinline" id="S{l^8T|PdA.~)VYN!y]{">
+                    <field name="text">10</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="variables_set" id="NO8?)/*!F)[_Ey(`!Q?q">
+                    <field name="VAR" id="F34Fa3@y)B{|sQC0zF,R" variabletype="">y</field>
+                    <field name="NAME">=</field>
+                    <value name="varset">
+                      <shadow type="textinline" id="v.JCC2KL7/ZHJHrBmo%9">
+                        <field name="text">20</field>
+                      </shadow>
+                    </value>
+                    <next>
+                      <block type="variables_set" id=".yp:UJ_z[[g5-D/S+g~F">
+                        <field name="VAR" id="26Cc59,?yVZ%8{C`=@v{" variabletype="">z</field>
+                        <field name="NAME">=</field>
+                        <value name="varset">
+                          <shadow type="textinline" id="-gB!=/(03m~uD[+wHP3J">
+                            <field name="text">12</field>
+                          </shadow>
+                        </value>
+                        <next>
+                          <block type="setpos" id=")_Bt);F~N0NTx#:!R7LS">
+                            <value name="text">
+                              <shadow type="textinline" id="@:H16_b|R[`q(REeTPP9">
+                                <field name="text">x</field>
+                              </shadow>
+                            </value>
+                            <value name="text1">
+                              <shadow type="textinline" id="/xNvv_^Rt,HI7rjA_Bh/">
+                                <field name="text">y</field>
+                              </shadow>
+                            </value>
+                            <value name="text2">
+                              <shadow type="textinline" id="wfPsKmt1-OGfKrs0,bXF">
+                                <field name="text">z</field>
+                              </shadow>
+                            </value>
+                            <next>
+                              <block type="whileout" id="0eV{?t!Nb=HX_~(rj=7#">
+                                <value name="cond">
+                                  <shadow type="textinline" id="?=]V@p*fLgsZ*]BRkTPU">
+                                    <field name="text">True</field>
+                                  </shadow>
+                                </value>
+                                <statement name="DO">
+                                  <block type="mcvar" id="[^Gyo3~8;~#U:KfV1TC#">
+                                    <next>
+                                      <block type="mctext2" id="/faD}b7B%WT*pQL@IRt#">
+                                        <value name="text">
+                                          <shadow type="textinline" id="CwJ(M]saxA1Afuhr8[;_">
+                                            <field name="text">x</field>
+                                          </shadow>
+                                        </value>
+                                        <value name="text1">
+                                          <shadow type="textinline" id="@./}bh!r+@h,kQa:;~PI">
+                                            <field name="text">y</field>
+                                          </shadow>
+                                        </value>
+                                        <value name="text2">
+                                          <shadow type="textinline" id="k=T:.Iy){vWB-6Rvlv5p">
+                                            <field name="text">z</field>
+                                          </shadow>
+                                        </value>
+                                        <value name="text3">
+                                          <shadow type="textinline" id="qlip~7Q?[.Sjj_m#3?I1">
+                                            <field name="text">35.1</field>
+                                          </shadow>
+                                        </value>
+                                        <next>
+                                          <block type="sleepnew" id="f(^O5flA427xh[)[])wZ">
+                                            <value name="sleep">
+                                              <shadow type="textinline" id="wgr^xRG4zss3KUhyq3LF">
+                                                <field name="text">.2</field>
+                                              </shadow>
+                                            </value>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </statement>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
